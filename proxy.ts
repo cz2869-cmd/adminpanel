@@ -1,7 +1,23 @@
 import { createServerClient } from '@supabase/ssr'
 import { NextResponse, type NextRequest } from 'next/server'
 
-const guarded = ['/desk', '/profiles', '/suggestions', '/votes']
+const guarded = [
+  '/desk',
+  '/profiles',
+  '/suggestions',
+  '/votes',
+  '/chains',
+  '/steps',
+  '/mix',
+  '/terms',
+  '/requests',
+  '/examples',
+  '/models',
+  '/providers',
+  '/responses',
+  '/domains',
+  '/whitelist',
+]
 
 export async function proxy(request: NextRequest) {
   let supabaseResponse = NextResponse.next({ request })

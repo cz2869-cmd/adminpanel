@@ -42,6 +42,7 @@ a {
 }
 
 button,
+input,
 select,
 textarea {
   font: inherit;
@@ -91,7 +92,7 @@ textarea {
 
 .shell {
   display: grid;
-  grid-template-columns: 240px 1fr;
+  grid-template-columns: 250px 1fr;
 }
 
 .rail {
@@ -103,6 +104,7 @@ textarea {
   display: flex;
   flex-direction: column;
   gap: 22px;
+  overflow: auto;
 }
 
 .brand small,
@@ -117,7 +119,22 @@ textarea {
   gap: 6px;
 }
 
+.navGroup {
+  margin: 14px 0 2px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.nav > div {
+  display: grid;
+  gap: 4px;
+}
+
 .nav a {
+  display: block;
   padding: 10px 12px;
   border-radius: 14px;
   color: var(--muted);
@@ -238,6 +255,12 @@ textarea {
   border-bottom: 1px solid var(--line);
 }
 
+.clip {
+  max-width: 420px;
+  white-space: pre-wrap;
+  vertical-align: top;
+}
+
 .tableWrap {
   overflow-x: auto;
 }
@@ -299,6 +322,7 @@ label {
   font-weight: 800;
 }
 
+input,
 textarea,
 select {
   width: 100%;

@@ -13,12 +13,12 @@ export default async function SuggestionsPage() {
     <>
       <header className="hero">
         <div>
-          <p className="eyebrow">Need a nudge</p>
-          <h1>Cafe suggestions</h1>
+          <p className="eyebrow">Read and manage</p>
+          <h1>AI generated media</h1>
         </div>
         <p className="muted">
-          Suggestions from Morningside Nook show up here on their own. Create,
-          update, or delete any of those records from this page.
+          Cafe suggestions from Morningside Nook show up here on their own.
+          Create, update, or delete any of those records from this page.
         </p>
       </header>
       {floor.suggestionsError ? (
